@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 5px;
+}
+body{
+    font-size: 3em;
+}
+div{
+    background-color: blueviolet;
+    padding: 5vw;
+    width: 50vw;
+    height: 50vh;
+    margin: 10vh;
+    border: 5vh solid red;
+    border-radius: 2vw;
+    font-size: 2em;
+}
+p{
+    background-color: chartreuse;
+    width: 50%;
+    height: 50%;
+    /* em & rem */
+    font-size: 3rem;
+    padding: 0.5rem;
+    margin: 1em;
+    border: 1em;
+}

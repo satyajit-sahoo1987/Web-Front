@@ -1,0 +1,102 @@
+/* Universal Selector */
+    *{
+        font-family: monospace;
+
+    }
+    /* Element Selector  or Tag Selector */
+    h1{
+color: blue;
+    }
+    p{
+        color:brown
+    }
+    /* Class Selector */
+    .highlight{
+        background-color: yellow;
+    }
+    /* ID Selector */
+    #unique-box{
+        border:2px solid blue;
+    }
+    /* Group selector */
+    h1,.highlight,#unique-box{
+        /* text-align: center; */
+        font-style: italic;
+    }
+/* Child Selector */
+    .nested > p{
+        color: green;
+    }
+        /* Descendant Selector */
+    .nested>div>div >p{
+        color: black;
+        background-color: red;
+    }
+    .nested p{
+        color: white;
+        background-color: black;
+    }
+    /* Adjacent Sibling Selector */
+    h3+p{
+        color: blueviolet;
+    }
+    /* General Sibling Selector */
+    h3~p{
+        color:blue;
+    }
+    /* Attribute Selctor */
+    input[type="text"]{
+        border: 5px solid purple;
+    }
+    input[type="password"]{
+        border: 5px solid green;
+    }
+
+    /* ul li{
+        color:aqua;
+    } */
+     #und{
+        color:aqua;
+     }
+     /* pesudo Classes */
+     .hover-button:hover{
+        background-color: aqua;
+        color: white;
+     }
+     input:focus{
+        outline:none;
+        border: 5px solid red;
+     }
+     li:first-child{
+        color:green;
+     }
+     li:last-child{
+        color:blue;
+     }
+     li:nth-child(2){
+        color:orange;
+     }
+     li:nth-child(3){
+        color:pink;
+     }
+     li:nth-child(4){
+        color:black;
+     }
+     /* Pesudo Elements */
+     .pseudo::first-line{
+        content:"Before";
+        color: black;
+     }
+     .pseudo::first-letter{
+        color:blue;
+        font-size: 30px;
+     }
+     .pseudo::before{
+        content:'😘';
+        color: black;
+     }
+     .pseudo::after{
+        content:'😒';
+        color: black;
+     }
+

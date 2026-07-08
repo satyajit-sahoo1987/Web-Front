@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novell Service</title>
+</head>
+<!-- <style>
+label{
+    display:inline-block;
+    width: 100px;
+}
+input{
+    width: 250px;
+    margin-bottom: 10px;
+}
+td{
+    padding: 10px;
+    font-size: 20px;
+    vertical-align: top;
+}
+tr{
+    height: 50px;
+}
+</style> -->
+<body>
+    <h2 style="text-align: center;">Novell Service Login</h2>
+    
+    <form action="#" >
+
+     <label style="display: inline-block;width: 100px;" for="name">Username :</label>&nbsp;
+     <input style="width: 250px;margin-bottom: 10px;"  type="text" name="username" placeholder="Enter your name" id="name">
+     
+     <br>
+     <label  style="display: inline-block;width: 100px;" for="pass">Password:</label>&nbsp;
+     <input style="width: 250px;margin-bottom: 10px;"  type="password" name="password"  id="pass">
+     <br>
+     <label  style="display: inline-block;width: 100px;" for="city">City of:</label>&nbsp;
+     <input style="width: 250px;margin-bottom: 10px;"  type="text" name="cityname" id="city">
+     <br>
+     <label  style="display: inline-block;width: 100px;" for="employ">Employment:</label>&nbsp;
+     <input style="width: 250px;margin-bottom: 10px;"  type="text" name="EmpName" id="employ">
+     <br>
+      <label style="display: inline-block;width: 100px;" for="server">Web server:</label>
+         <select name="webServer" id="server">
+            <option value="">--Choose a server--</option>
+            <option value="JSP">JSP</option>
+            <option value="Node JS">Node JS</option>
+            <option value="Java Servlet">Java Servlet</option>
+         </select>
+         
+         <br><br>
+         <table>
+        <tr>
+            <td>
+                Please specify<br>
+                your role:
+            </td>
+
+            <td >
+                <input type="radio" name="role" id="ad" value="Admin"> <label for="ad">Admin</label><br>
+
+                <input type="radio" name="role" id="eng" value="Engineer"><label for="eng">Engineer</label> <br>
+
+                <input type="radio" name="role" id="man" value="Manager"><label for="man">Manager</label><br>
+
+                <input type="radio" name="role" id="gst" value="Guest"> <label for="gst">Guest</label><br>
+            </td>
+        </tr>
+         </table>
+         
+        <br><br>
+        <table>
+        <tr>
+            <td>
+            Single Sign-on<br>
+                to the following
+            </td>
+
+            <td >
+            <input type="checkbox" name="terms" id="terms" value="Mad">
+            <label for="terms">Mad</label><br>
+
+            <input type="checkbox" name="terms" id="terms" value="Payroll">
+            <label for="terms">Payroll</label><br>
+
+            <input type="checkbox" name="terms" id="terms" value="Self-service">
+            <label for="terms">Self-service</label><br>
+            </td>
+        </tr>
+         </table>
+         <div style="text-align: center;">
+         <button>Login</button>
+         <button type="reset">Reset</button>
+         </div>
+    </form>
+    
+</body>
+</html>
