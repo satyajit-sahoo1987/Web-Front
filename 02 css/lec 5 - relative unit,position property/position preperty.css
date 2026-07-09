@@ -14,8 +14,20 @@ inset: 20px;
 position: unset;
 }
 .css{
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     position: absolute;
     top: 10px;
     left: 10px;
+    position: inherit;
+    position: unset;
 }
+.js{
+    background-color: green;
+    position: fixed;
+    top: 30px;
+    left: 10px;
+
+}
+/* position sticky */
+/* fixed-always relate vh */
+/* absolute relate parent aftre vh */
