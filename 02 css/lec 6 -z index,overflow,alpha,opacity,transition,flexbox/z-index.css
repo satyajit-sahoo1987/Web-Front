@@ -18,12 +18,12 @@
     z-index: 999;
 }
 #green-box{
-    background-color: green;
+    background-color: rgb(224, 202, 202);
     position: relative;
     z-index: 9999;
 }
 #blue-box{
-    background-color: blue;
+    background-color: green;
     position: relative;
     z-index: 99999;
 }
