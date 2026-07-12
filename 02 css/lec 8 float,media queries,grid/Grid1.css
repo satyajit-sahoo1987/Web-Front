@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+body{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+    text-align: center;
+}
+.container{
+border-radius: 1rem;
+  max-width: 80%;
+  margin: 0 auto;
+  background: lightcyan;
+  box-shadow: 3px 3px 15px black;
+  padding: 40px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1rem;
+}
+.box1{
+    background-color: #a473f9;
+    grid-column-start:  span 2;
+}
+.box2{
+    background-color: #465765;
+    
+}
+.box3{
+    background-color: #ffffff;
+    grid-row-start:  span 2;
+}
+.box4{
+    background-color: #ffffff;
+    
+}
+.box5{
+    background-color: #191f2c;
+    grid-column-start:  span 2;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  color: black;
+  font-size: 3rem;
+}
+.box-3,
+.box-4 {
+  color: black;
+}
