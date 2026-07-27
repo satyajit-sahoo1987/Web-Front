@@ -96,4 +96,19 @@ function fullName(first,last){
  }
  let large=findLarge(22,19);
  console.log("Large number is "+large);
+
+ function prime(num){
+    let count=0;
+    while(num%2==0){
+        count++;
+    }
+    if(count==2){
+        console.log("it is a prime number");
+        
+    }else{
+        console.log("it is not a prime number");
+        
+    }
+ }
+ prime(2)
  
