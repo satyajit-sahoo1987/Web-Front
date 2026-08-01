@@ -54,4 +54,6 @@ function fun1(){
         
 }
 fun1()
+console.log("After calling fun1");
+
 
