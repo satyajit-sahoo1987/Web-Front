@@ -49,3 +49,24 @@ fruits[index1]="Papaya";
 alert("Search element is not present");
 }
 console.log(fruits);
+const numbers=[10,20,30];
+const fruitsWithNumber=fruits.concat(numbers);
+console.log(fruitsWithNumber);
+
+const fruitsString=fruits.join('_');
+console.log(fruitsString);
+
+const reversedFruits=fruits.reverse();
+console.log("After reverse",reversedFruits);
+
+fruits.sort();
+console.log("After sort",fruits);
+
+const arr=[4,5,35,26,8];
+console.log("Before sort",arr);
+
+arr.sort(xyz);
+function xyz(a,b){
+    return a-b;
+}
+console.log("After sort",arr);
