@@ -49,6 +49,21 @@ fruits[index1]="Papaya";
 alert("Search element is not present");
 }
 console.log(fruits);
+fruits.push('Mango', 'Orange')
+console.log(fruits)
+console.log("last index of mango", fruits.lastIndexOf("Mango"))
+
+console.log(fruits.slice(0, 3))
+console.log(fruits.slice(1, 3))
+console.log(fruits.slice(2))
+console.log(fruits.slice())
+
+// fruits.splice(2, 3)
+// console.log("After splice", fruits)
+
+// ['Apple', 'Banana', 'Mango', 'Orange', 'Mango', 'Orange']
+fruits.splice(2, 3, "Cherry")
+console.log("After splice2", fruits)
 const numbers=[10,20,30];
 const fruitsWithNumber=fruits.concat(numbers);
 console.log(fruitsWithNumber);
