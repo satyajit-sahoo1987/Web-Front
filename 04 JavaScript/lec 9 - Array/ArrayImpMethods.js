@@ -168,27 +168,73 @@ console.log(Stud)
 // console.log(UserData1);
 
 //==========================find()====================
-numbers=[10,20,30,41,40,51,]
-const number1=numbers.find(num=>num==41)
-console.log("is 41 found ",number1);
+// // numbers=[10,20,30,41,40,51,]
+// const number1=numbers.find(num=>num==41)
+// console.log("is 41 found ",number1);
 
-const numberIdx=numbers.findIndex(num=>num==41)
-console.log("is 41 found ",numberIdx);
+// const numberIdx=numbers.findIndex(num=>num==41)
+// console.log("is 41 found ",numberIdx);
 
 //------Q1==========
 // const products = [
 //   { id: 1, name: "Laptop", price: 50000 },
 //   { id: 2, name: "Mobile", price: 20000 },
 //   { id: 3, name: "Tablet", price: 30000 }
-// ];
-const FindProductDetail=products.find(prod=>prod.id==2)
-console.log(FindProductDetail.price);
+// // ];
+// const FindProductDetail=products.find(prod=>prod.id==2)
+// console.log(FindProductDetail.price);
 //===========Q2==========
 
 // const students = [
 //   { name: "A", marks: 80 },
 //   { name: "B", marks: 45 },
 //   { name: "C", marks: 60 }
-// ];
-const FindStudentDetail=students.find(student=>student.name=='C')
-console.log(FindStudentDetail.marks);
+// // ];
+// const FindStudentDetail=students.find(student=>student.name=='C')
+// console.log(FindStudentDetail.marks);
+
+//===================reduce()================
+numbers=[10,20,30,40,51]
+
+const numVal=numbers.reduce((prev,curr,idx,arr)=>{
+console.log("previous value",prev," current value ",curr," at idx",idx,"of array",arr);
+return prev+curr;
+
+});
+console.log(numVal);
+
+// const sumval=numbers.reduce((p,c)=>p+c)
+// console.log(sumval)
+//-------------------Q1------------------
+const orders = [
+  { id: 1, amount: 1000, status: "delivered" },
+  { id: 2, amount: 2000, status: "pending" },
+  { id: 3, amount: 1500, status: "delivered" }
+];
+//step1-find the orders whos status is Delivered
+// ?step2-merege the delivered order amount to et the total sale
+let ordered=orders.filter((val)=>val.status=="delivered").reduce((p,c)=>p.amount+c.amount)
+console.log(ordered);
+
+const deliveredOrders=orders.filter(order=>order.status==='delivered')
+console.log(deliveredOrders);
+
+const totalSale=deliveredOrders.reduce((prev,curr)=>{
+    console.log();
+    
+})
+
+//--------------------Q2-------------------------
+ const stu = [
+
+  { id: 1, name: "Laptop",age:25 },
+  { id: 2, name: "Mobile", age: 58 },
+  { id: 3, name: "Tablet", age: 82}
+//  ];
+//  const findAvg=stu.reduce((prev,cur)=>prev+cur.age,0)
+//  console.log(findAvg/stu.length);
+ 
+//  const findage=stu.reduce((p,c)=>{
+//     return p+c.age;
+//  },0);
+// console.log(findage/stu.length);
