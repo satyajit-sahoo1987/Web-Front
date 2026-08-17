@@ -1,13 +1,13 @@
-#html.html {
+ #html.html {
   background-color: yellow;
 }
 
-body {
+/* body {
   color: green;
-}
+} */
 
 ul {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
-}
+}  

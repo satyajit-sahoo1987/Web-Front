@@ -76,6 +76,22 @@
 // DOMTokenList(2) ['red', 'bgColor', value: 'red bgColor']
 
 //-------------toggle---------
-const toggle=document.querySelector("body > h2:nth-child(3)").classList.toggle("red")
-console.log(toggle);
+// const toggle=document.querySelector("body > h2:nth-child(3)").classList.toggle("red");
+// console.log(toggle);
 //Accessing Parent
+//---------------------ACCESSING Parent and sibling ELEMENT---------------------
+// document.querySelector("body > p > a:nth-child(2)")
+// <a href=​"https:​/​/​en.wikipedia.org/​wiki/​Graphical_user_interface
+// ">​graphical user interface​</a>​
+// document.querySelector("body > p > a:nth-child(2)").parentElement
+// <p>​…​</p>​
+// document.querySelector("body > p > a:nth-child(2)").parentElement.parentElement
+// <body style=​"font-family:​ sans-serif;​">​…​</body>​
+// document.querySelector("body > p > a:nth-child(2)").parentElement.parentElement.parentElement
+// <html lang=​"en">​view-sourcescroll<head>​…​</head>​<body style=​"font-family:​ sans-serif;​">​…​</body>​</html>​
+// document.querySelector("body > p > a:nth-child(2)").parentElement.parentElement.parentElement.parentElement
+// null
+
+//------------
+const firstLink=document.querySelector("body > p > a:nth-child(2)")
+console.log(firstLink);
