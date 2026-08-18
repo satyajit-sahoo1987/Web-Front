@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .grand-grand-parent{
+            border:2px solid black;
+            padding: 20px;
+        }
+        .grand-parent{
+            border: 2px solid blue;
+            padding: 20px;
+        }
+        .parent{
+            border: 2px solid green;
+            padding: 20px;
+        }
+        .sibling1,.sibling2{
+            border: 2px solid crimson;
+            padding: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grand-grand-parent">
+        <div class="grand-parent">
+            <div class="parent">
+                <div class="sibling1"></div>
+                <div class="sibling2"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const sibling2=document.querySelector(".sibling1")
+        // sibling2.closest(' .grand-grand-parent')
+// <div class=​"grand-grand-parent">​…​</div>​
+// sibling2.closest(' .grand-grand-parent').append('sibbling1')
+// undefined
+// sibling2.closest(' .grand-grand-parent').prepend('sibbling2')
+// undefined
+// sibling2.closest(' .grand-grand-parent').prepend(sibling2)
+// VM328:1 Uncaught ReferenceError: sibbling1 is not defined
+//     at <anonymous>:1:50
+// (anonymous) @ VM328:1
+// sibling2.closest(' .grand-grand-parent').prepend(document.querySelector('.sibling1'))
+// VM401:1 Uncaught SyntaxError: missing ) after argument list (at VM401:1:84)
+sibling2.closest(' .grand-grand-parent').append(document.querySelector('.sibling1').textContent='Barsha weeds Rahul')
+// undefined
+//     </script>
+</body>
+</html>

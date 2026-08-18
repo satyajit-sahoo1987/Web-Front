@@ -25,9 +25,9 @@
     const card = document.querySelector(".card")
     const h1 = document.querySelector("h1")
 
-    console.log(container)
-    console.log(card)
-    console.log(h1)
+    // console.log(container)
+    // console.log(card)
+    // console.log(h1)
 
     // container.append(h1)
     // container.append("Hiiiiiiiii")
@@ -38,7 +38,7 @@
 
     const h1Clone2 = h1.cloneNode(true)
     h1Clone2.textContent = 'Hello World'
-    // container.appendChild(h1, h1Clone2) // appendChild only adds the first element as a last child
+    container.appendChild(h1Clone2,h1) // appendChild only adds the first element as a last child
 
     // Diff betn append & appendChild
     // 1. append can add multiple arguments as child whereas appendChild only add first element as a child although we have passed multiple arguments in the parameters
