@@ -49,6 +49,7 @@
         <p>Press any key and watch the magic!</p>
         <div class="container"></div>
         <script>
+            const container= document.querySelector('.container')
             const createCard=(e)=>{
                 console.log("////////",e);
                 e.preventDefault()
@@ -59,8 +60,9 @@
                 key:${e.key}
                 code:${e.code}`
                 container.append(newCard)
+                
             }
-            const container=document.querySelector('.container')
+            
             document.addEventListener("keydown",createCard)
             document.addEventListener("keyup",createCard)
             document.addEventListener("keypress",createCard)

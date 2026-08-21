@@ -58,7 +58,7 @@
             const addCardButton = document.querySelector(".card-btn");
             const removeCardButton = document.querySelector(".dlt-btn");
             const container = document.querySelector(".container");
-const addCardButton2 = document.querySelector(".dlt-btn");
+
             let count = 1;
 
             // Function to create a new card
@@ -84,19 +84,20 @@ const addCardButton2 = document.querySelector(".dlt-btn");
             document.addEventListener('scroll',createCard)
 
            //delete button
-           removeCardButton.addEventListener("click",()=>{
-            container.innerHTML=''
-            count=1
-           })
-            function removeCard(e) {
-                const newCard = document.createElement("div");
-                newCard.classList.add("card");
-                newCard.innerText = `${count++} (${e.type})`;
-                container.appendChild(newCard);
-            }
+        //    removeCardButton.addEventListener("click",()=>{
+        //     container.innerHTML=''
+        //     count=1
+        //    })
+        
+            
 
-            //Mouse Event
-            addCardButton.addEventListener('click',createCard)
+            //remove button
+            removeCardButton.addEventListener('click',()=>{
+            const clear=document.querySelector(".card")
+            clear.remove()
+            // clear.innerText=''
+            count=1
+        })
         </script>
     </body>
 </html>

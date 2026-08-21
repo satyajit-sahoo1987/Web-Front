@@ -1,4 +1,5 @@
 function makeSound(key){
+    
     switch (key) {
         case "w":
             const audio1 = new Audio("./sounds/tom-1.mp3");
@@ -46,18 +47,18 @@ function buttonAnimation (currentKey){
 
     setTimeout(function () {
         activeButton.classList.remove("pressed");
-    }, 100)
+    }, 100) 
 } 
-//document.addEventListener("keydown",makedown)
+// document.addEventListener("keydown",makedown)
 const sound=document.addEventListener("keydown",(e)=>{
     makeSound(e.key)
-    buttonAnimation(e.key)
+    buttonAnimation(e.key)  
 })
 
 const firstbtn=document.querySelectorAll(".drum")
 firstbtn.forEach(drumBtn => drumBtn.addEventListener('click',(e)=>{
-    const key=drumBtn.innerText
+    const key=drumBtn.innerHTML
     makeSound(key)
-    buttonAnimation(key)
+    buttonAnimation(key)    
 }))
     
