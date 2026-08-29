@@ -1,33 +1,35 @@
-/* #html.html {
+
+
+#html.html {
   background-color: blueviolet;
-} */
-/* 
- #html {
+} 
+
+ /* #html {
   background-color: cyan;
-}
-
-#html {
-  background-color: lightgray;
-}
-
-.html {
-  background-color: yellow ; 
 } */
+
+/* #html {
+  background-color: lightgray;
+} */
+
+/* .html {
+  background-color: yellow ; 
+}  */
 
  /* li {
   background-color: red ;
 }  */
 
-li {
+/* li { 
   background-color: green;
-}
-
-/* li {
-  background-color: blue;
 } */
+
+ li {
+   background-color: blue; 
+} 
 
 /**
 element selector -> (0, 0, 1) -> 1
 class selector -> (0, 1, 0) -> 10
 id selector -> (1, 0, 0) -> 100
-*/ 
+/*  */

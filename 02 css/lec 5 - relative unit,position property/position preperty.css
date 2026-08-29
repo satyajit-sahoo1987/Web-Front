@@ -4,18 +4,18 @@ ul{
 
 }
 .html{
-/* position: absolute; */
 position: relative;
+/* position: fixed; */
 /* bottom: -59px; */
 top: 10px;
 left: 10px;
 /* right: 12px; */
 inset: 20px;
-position: unset;
+/* position: unset; */
 }
 .css{
     /* background-color: yellowgreen; */
-    position: absolute;
+    /* position: fixed; */
     top: 10px;
     left: 10px;
     position: inherit;
@@ -23,11 +23,11 @@ position: unset;
 }
 .js{
     background-color: green;
-    position: fixed;
+    position: absolute;
     top: 30px;
     left: 10px;
-
+/* position: unset; */
 }
 /* position sticky */
 /* fixed-always relate vh */
-/* absolute relate parent aftre vh */
+/* absolute relate parent aftre vh */   
