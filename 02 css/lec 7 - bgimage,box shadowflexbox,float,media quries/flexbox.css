@@ -11,7 +11,7 @@ div{
 .container{
     height: 300px;
     width: 80%;
-    border: 2px solid black;
+    border: 2px solid pink;
     margin: 10px auto;
     background-color: black;
     /* Flexbox */
@@ -21,11 +21,13 @@ div{
 
     /* flex-direction: row-reverse; */
     /* flex-direction: column-reverse; */
+    justify-content: space-between;
     /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
 /* ---------------------------- */
 /* When flex direction row justify content-horizontally,align item -vertically */
-/* justify content-flex-start,flex-end,centre,spase-between,space-around,space-evenly */
-/* align-item-center,flex-start,flex-end */
+/* justify content=>>>>flex-start,flex-end,centre,spase-between,space-around,space-evenly */
+/* align-item=>>>center,flex-start,flex-end */
     /* flex-direction: row; */
     /* align-items: centre; */
 /* ----------------------------- */
@@ -35,11 +37,11 @@ div{
 
     /* flex-direction: column; */
     /* flex-wrap: wrap; */
-      flex-direction: column;
-      flex-wrap: nowrap;
-}
-#voilet{
-    align-self: center;
-}
+      /* flex-direction: column; */
+      /* flex-wrap: nowrap; */
+/* } */
+/* #voilet{ */
+    /* align-self: center; */
+/* } */
  /* by default flex direction row */
  /* justify content-horizontally */
