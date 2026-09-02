@@ -1,6 +1,6 @@
 // function f1(){
 //     console.log("Function 1");
-//     functionf2(){
+//     function f2(){
 //         console.log("Function 2");
         
 //     }

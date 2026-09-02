@@ -8,7 +8,7 @@
 // if(name) {
 //   console.log("Your name is", name)
 // } else {
-// //   console.log("Re enter user name")
+//   console.log("Re enter user name")
 //   console.log("name is", prompt("Re enter user name"))
 // }
 

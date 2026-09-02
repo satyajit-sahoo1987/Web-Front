@@ -1,7 +1,7 @@
-let number=[10,20,30,40,50];
-for(let i=0;i<number.length;i++){
-    console.log(number[i]);
-}
+// let number=[10,20,30,40,50];
+// for(let i=0;i<number.length;i++){
+//     console.log(number[i]);
+// }
 // number.forEach(function printNumbers(value,idx,arr){
 //     console.log("Number is :",value,"Index pos :",idx,"Array is :",arr);
 // })
@@ -37,13 +37,13 @@ for(let i=0;i<number.length;i++){
 //     return value+2;
 // });
 // console.log(numIncreaseTwo);
-const numSquareTwo=number.map((value,idx,arr)=>{
-    console.log("Number is :",value,"Index pos :",idx,"Array is :",arr);
+// const numSquareTwo=number.map((value,idx,arr)=>{
+//     console.log("Number is :",value,"Index pos :",idx,"Array is :",arr);
     // return value*value;
     // return idx+1;
-    return value*value*value;
-});
-console.log(numSquareTwo);
+//     return value*value*value;
+// });
+// console.log(numSquareTwo);
 //--------Array Of Object---------
 const users=[
     {
@@ -86,12 +86,12 @@ const users=[
 
 //=========================Filter method=========================
 
-// numbers=[10,11,20,21,30,31];
-// const divisibleTen=numbers.filter((value,idx,arr)=>{
-// console.log("Value is",value,"at index",idx," of array",arr);
-// return value%10==0
-// });
-// console.log("divisible by 10",divisibleTen)
+numbers=[10,11,20,21,30,31];
+const divisibleTen=numbers.filter((value,idx,arr)=>{
+console.log("Value is",value,"at index",idx," of array",arr);
+return value%10==0
+});
+console.log("divisible by 10",divisibleTen)
 
 // const usersData = [
 //   { id: 1, name: "Amit", isActive: true },
@@ -107,11 +107,11 @@ const users=[
 // const userName=usersData.map((values)=>values.name);
 // console.log(userName);
 //----------------------3----------------
-const products = [
-  { id: 1, name: "Laptop", price: 50000 },
-  { id: 2, name: "Mobile", price: 20000 },
-  { id: 3, name: "Tablet", price: 30000 }
-];
+// const products = [
+//   { id: 1, name: "Laptop", price: 50000 },
+//   { id: 2, name: "Mobile", price: 20000 },
+//   { id: 3, name: "Tablet", price: 30000 }
+// ];
 // const product=products.filter(product=>product.price>25000).map(product=>product.name)
 // console.log(product);
 // const pro=products.filter(product=>product.price>25000)
@@ -122,19 +122,19 @@ const products = [
 
 
 //------------------4-----------------
-const students = [
-  { name: "A", marks: 80 },
-  { name: "B", marks: 45 },
-  { name: "C", marks: 60 }
-];
-const Stud=students.map((detail)=>{
-return{
-    name:detail.name,
-    marks:detail.marks,
-    result:detail.marks>=50?"Pass":detail.marks<50?"Fail":""
-}
-});
-console.log(Stud)
+// const students = [
+//   { name: "A", marks: 80 },
+//   { name: "B", marks: 45 },
+//   { name: "C", marks: 60 }
+// ];
+// const Stud=students.map((detail)=>{
+// return{
+//     name:detail.name,
+//     marks:detail.marks,
+//     result:detail.marks>=50?"Pass":detail.marks<50?"Fail":""
+// }
+// });
+// console.log(Stud)
 
 
 //=======================some() & every()====================return value true and false type
@@ -166,9 +166,8 @@ console.log(Stud)
 // console.log(UserData);
 // const UserData1=usersData.every(Active=>Active.isActive)
 // console.log(UserData1);
-
 //==========================find()====================
-// // numbers=[10,20,30,41,40,51,]
+// numbers=[10,20,30,41,40,51,]
 // const number1=numbers.find(num=>num==41)
 // console.log("is 41 found ",number1);
 
@@ -180,7 +179,7 @@ console.log(Stud)
 //   { id: 1, name: "Laptop", price: 50000 },
 //   { id: 2, name: "Mobile", price: 20000 },
 //   { id: 3, name: "Tablet", price: 30000 }
-// // ];
+// ];
 // const FindProductDetail=products.find(prod=>prod.id==2)
 // console.log(FindProductDetail.price);
 //===========Q2==========
@@ -189,19 +188,19 @@ console.log(Stud)
 //   { name: "A", marks: 80 },
 //   { name: "B", marks: 45 },
 //   { name: "C", marks: 60 }
-// // ];
+// ];
 // const FindStudentDetail=students.find(student=>student.name=='C')
 // console.log(FindStudentDetail.marks);
 
 //===================reduce()================
-numbers=[10,20,30,40,51]
+// numbers=[10,20,30,40,51]
 
-const numVal=numbers.reduce((prev,curr,idx,arr)=>{
-console.log("previous value",prev," current value ",curr," at idx",idx,"of array",arr);
-return prev+curr;
+// const numVal=numbers.reduce((prev,curr,idx,arr)=>{
+// console.log("previous value",prev," current value ",curr," at idx",idx,"of array",arr);
+// return prev+curr;
 
-});
-console.log(numVal);
+// });
+// console.log(numVal);
 
 // const sumval=numbers.reduce((p,c)=>p+c)
 // console.log(sumval)
@@ -213,16 +212,16 @@ const orders = [
 ];
 //step1-find the orders whos status is Delivered
 // ?step2-merege the delivered order amount to et the total sale
-let ordered=orders.filter((val)=>val.status=="delivered").reduce((p,c)=>p.amount+c.amount)
-console.log(ordered);
+// let ordered=orders.filter((val)=>val.status=="delivered").reduce((p,c)=>p.amount+c.amount)
+// console.log(ordered);
 
-const deliveredOrders=orders.filter(order=>order.status==='delivered')
-console.log(deliveredOrders);
+// const deliveredOrders=orders.filter(order=>order.status==='delivered')
+// console.log(deliveredOrders);
 
-const totalSale=deliveredOrders.reduce((prev,curr)=>{
-    console.log();
+// const totalSale=deliveredOrders.reduce((prev,curr)=>{
+//     console.log(prev.amount+curr.amount);
     
-})
+// })
 
 //--------------------Q2-------------------------
  const stu = [
@@ -230,11 +229,11 @@ const totalSale=deliveredOrders.reduce((prev,curr)=>{
   { id: 1, name: "Laptop",age:25 },
   { id: 2, name: "Mobile", age: 58 },
   { id: 3, name: "Tablet", age: 82}
-//  ];
-//  const findAvg=stu.reduce((prev,cur)=>prev+cur.age,0)
-//  console.log(findAvg/stu.length);
+ ];
+ const findAvg=stu.reduce((prev,cur)=>prev+cur.age,0)
+ console.log(findAvg/stu.length);
  
-//  const findage=stu.reduce((p,c)=>{
-//     return p+c.age;
-//  },0);
-// console.log(findage/stu.length);
+ const findage=stu.reduce((p,c)=>{
+    return p+c.age;
+ },0);
+console.log(findage/stu.length);

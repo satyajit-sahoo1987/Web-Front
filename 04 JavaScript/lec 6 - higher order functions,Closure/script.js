@@ -1,19 +1,19 @@
-// // function fun(f1){
-// //     console.log("Value of f1 is :",f1);
+// function fun(f1){
+//     console.log("Value of f1 is :",f1);
     
-// // }
-// // fun(10)
-// // fun(true)
-// // fun("JT")
-// // function hello(f2){
-// //     console.log("Hello Everyone!!!");
-// //     return fun(100);
-// // }
-// // console.log(hello);
-// // hello()
+// }
+// fun(10)
+// fun(true)
+// fun("JT")
+// function hello(f2){
+//     console.log("Hello Everyone!!!");
+//     return fun(100);
+// }
+// console.log(hello);
+// hello()
 
-// // fun(hello())     
-// // fun(hello())
+// fun(hello())     
+// fun(hello())
 
 // //--------------------
 // function f3(){
@@ -22,11 +22,11 @@
 // }
 // function f1(){
 //     console.log('f1 function');
-//     // return 101;
-//     // return function f2(){
-//     //     console.log('f2 function');
+//     return 101;
+//     return function f2(){
+//         console.log('f2 function');
         
-//     // }
+//     }
 //     return f3
     
 // }
@@ -46,19 +46,19 @@
 
 
 //------------setInterval
-console.log(1);
-setInterval(function f1(){
-    console.log(2);
+// console.log(1);
+// setInterval(function f1(){
+//     console.log(2);
     
-},3000)
-console.log(3);
+// },3000)
+// console.log(3);
 //---------------------------------------------------
     // function f1(){
     //     console.log("Hiiii");
         
     // }
     // const intervalId=setInterval(f1,2000)
-    // // console.log(intervalId);
+    // console.log(intervalId);
     // const timerId=setTimeout(function(){
     //     console.log("Clearing Interval");
     //     clearInterval(intervalId)
@@ -75,14 +75,14 @@ console.log(3);
 // }, 5000);
 
 //-----------------------------------------------------------------------
-// let count=1;
-// let interval=setInterval(function f1(){
-//     console.log(count);
-//     count++;
-//     if(count>5){
-//         clearInterval(interval)
-//     }
-// },1000);
+let count=1;
+let interval=setInterval(function f1(){
+    console.log(count);
+    count++;
+    if(count>5){
+        clearInterval(interval)
+    }
+},1000);
 
 
 

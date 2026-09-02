@@ -58,8 +58,8 @@ console.log(fruits.slice(1, 3))
 console.log(fruits.slice(2))
 console.log(fruits.slice())
 
-// fruits.splice(2, 3)
-// console.log("After splice", fruits)
+fruits.splice(2, 3)
+console.log("After splice", fruits)
 
 // ['Apple', 'Banana', 'Mango', 'Orange', 'Mango', 'Orange']
 fruits.splice(2, 3, "Cherry")

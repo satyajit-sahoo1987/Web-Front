@@ -1,10 +1,11 @@
+
 // function myFun(){
 //     let var1=10;
 //     const var2=20;
 //     var var3=30;
+//     // console.log(var3)
 // }
 // myFun();
-// console.log(var1)
 
 //-----------------------------------
 //1)Golbal Scope

@@ -6,8 +6,8 @@
 // myFun();
 
 // function greet(name="jt"){
-//     console.log("Good Morning",name,'!!!');
-    
+    // console.log("Good Morning",name,'!!!');
+    // 
 // }
 // greet("Rahul",10,20);
 
@@ -31,84 +31,85 @@
 // console.log(value)
 
 //1---------------
-function Hello(){
-    console.log("Hello")
-}
-Hello();
-function showDate(){
-    console.log("24-07-2026");
+// function Hello(){
+//     console.log("Hello")
+// }
+// Hello();
+// function showDate(){
+//     console.log("24-07-2026");
     
-}
-showDate();
-function showCollege(){
-    console.log("Hi-Tech Institute of Techology");
+// }
+// showDate();
+// function showCollege(){
+//     console.log("Hi-Tech Institute of Techology");
     
-}
-showCollege();
-function message(){
-    console.log("Welcome to our JT");
+// }
+// showCollege();
+// function message(){
+//     console.log("Welcome to our JT");
     
-}
-message();
+// }
+// message();
 //Q2--------------------------
-function showName(name='jT'){
-    console.log("Name is:"+name);
+// function showName(name='jT'){
+//     console.log("Name is:"+name);
     
-}
-showName("Java Technocrat")
-function showAge(age='18'){
-    console.log("I am "+age);
+// }
+// showName("Java Technocrat")
+// function showAge(age='18'){
+//     console.log("I am "+age);
     
-}
-showAge(21); 
-function printTable(num){
-    for(let i=1;i<=10;i++){
-        console.log(`${num} x ${i} = ${num * i}`);
-    }
-}   
-printTable(5)
-function multi(a,b){
-    console.log("Multiple of a& b is "+(a*b));
+// }
+// showAge(21); 
+// function printTable(num){
+//     for(let i=1;i<=10;i++){
+//         console.log(`${num} x ${i} = ${num * i}`);
+//     }
+// }   
+// printTable(5)
+// function multi(a,b){
+//     console.log("Multiple of a& b is "+(a*b));
     
-}
-multi(2,4)
+// }
+// multi(2,4)
 //Q3--------------------------------
-function add(s,b){
-    return s+b;
-}
- let val=add(19,18);
- console.log(val);
+// function add(s,b){
+//     return s+b;
+// }
+//  let val=add(19,18);
+//  console.log(val);
 
-function isEligible(age){
-    return age>=18;
-}
- let age=isEligible(17);
- console.log(age);
+// function isEligible(age){
+//     return age>=18;
+// }
+//  let age=isEligible(17);
+//  console.log(age);
 
-function fullName(first,last){
-    return first+" "+last;
-}
- let name=fullName("Satyajit","Sahoo");
- console.log(name);
+// function fullName(first,last){
+//     return first+" "+last;
+// }
+//  let name=fullName("Satyajit","Sahoo");
+//  console.log(name);
  
- function findLarge(a,b){
-    return a>b?a:b;
- }
- let large=findLarge(22,19);
- console.log("Large number is "+large);
+//  function findLarge(a,b){
+//     return a>b?a:b;
+//  }
+//  let large=findLarge(22,19);
+//  console.log("Large number is "+large);
 
- function prime(num){
-    let count=0;
-    while(num%2==0){
-        count++;
-    }
-    if(count==2){
-        console.log("it is a prime number");
+//  function prime(num){
+//     let count=0;
+//     while(num%2==0){
+//         count++;
+//     }
+//     if(count==2){
+//         console.log("it is a prime number");
         
-    }else{
-        console.log("it is not a prime number");
+//     }else{
+//         console.log("it is not a prime number");
         
-    }
- }
- prime(2)
+//     }
+    
+//  }
+//  prime(2)
  
