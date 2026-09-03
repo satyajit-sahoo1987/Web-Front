@@ -29,7 +29,7 @@ let numbers=[10,20,30,40,50];
 
 //======================renaming-------------------------
 // const{id:userId,name:userName,age,...rest}=user
-// // console.log(id,name,age,rest);//reference error-erroeid is not defined
+// console.log(id,name,age,rest);//reference error-error id is not defined
 // console.log(userId,userName,age,rest);
 
 //---------------------Q1---------------
@@ -48,16 +48,16 @@ function handleObj(target){
 const{name,value}=target
 
 employee[name]=value
-// if(name === "id") {
-  //   employee.id = value
-  // } elseif(name === "age") {
-  //   employee.age = value
-  // }
+if(name === "id") {
+    employee.id = value
+  } else if(name === "age") {
+    employee.age = value
+  }
 
-  // switch(name) {
-  //   case "id":
-  //     employee.id = value
-  // }
+  switch(name) {    
+    case "id":
+      employee.id = value
+  }
 }
 
 handleObj({name:"dept",value:"CSE"})

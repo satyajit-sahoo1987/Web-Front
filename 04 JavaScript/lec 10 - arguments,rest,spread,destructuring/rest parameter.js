@@ -1,4 +1,4 @@
-// function fun() {
+// function fun1() {
 //   console.log("arguments", arguments)
 
 //   console.log(arguments[0]) // 10
@@ -10,7 +10,7 @@
 // }
 
 
-// const fun = function () {
+// const fun2 = function () {  
 //   console.log("arguments", arguments)
 
 //   console.log(arguments[0]) // 10
@@ -21,20 +21,21 @@
 //   }
 // }
 
-const fun = (...others) => {
+const fun = (...others) => {  
   // console.log("arguments", arguments)
   
-  // console.log(arguments[0]) // 10
-  // console.log(arguments[2]) // true
-  
-  // for(let i = 0; i < arguments.length; i++) {
-  //   console.log(arguments[i])
-  // }
+  // console.log(others[0]) // 10
+  // console.log(others[2]) // true
 
-  console.log("others", others)
-  for(let i = 0; i < others.length; i++) {
-      console.log(others[i])
-  }
+  
+    // for(let i = 0; i < others.length; i++) {
+    //   console.log(others [i])
+    // }
+
+  // console.log("others", others)
+  // for(let i = 0; i < others.length; i++) {
+  //     console.log(others[i])
+  // }
 
   others.forEach((el) => console.log(el))
 }

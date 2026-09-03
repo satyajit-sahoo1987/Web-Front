@@ -17,17 +17,16 @@
 
 // =================== copy arrays
 // const arr1 = [100, 200, 300]
-// // const arr2 = arr1
-// // arr2.push(400)
-// // console.log(arr1)
+// const arr2 = arr1
+// arr2.push(400)
+// console.log(arr1)
 
-// // const arr2 = []
-// // for (let i = 0; i < arr1.length; i++) {
-// //   arr2[i] = arr1[i];
-// // }
+// const arr2 = []
+// for (let i = 0; i < arr1.length; i++) {
+//   arr2[i] = arr1[i];
+// }
 
 // const arr2 = [...arr1]
-
 // arr2.push(500)
 // console.log(arr1)
 // console.log(arr2)
@@ -52,7 +51,7 @@
 //   age: 23
 // }
 
-// // const copy = user;
+// const copy = user;
 
 // const copyUser = {...user, phone: "98765654321"}
 // console.log(copyUser)
@@ -74,7 +73,7 @@ const employee = {
 
 // const copyEmployee = {...employee}
 // copyEmployee.address.city = 'CTC'
-// // console.log(employee)
+// console.log(employee)
 
 const copyEmployee1={...employee,
     address:{...employee.address}

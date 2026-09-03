@@ -19,7 +19,7 @@
 
 
 // // ============= methods with arguments
-// const newString = "Java Technocrat"
+const newString = "Java Technocrat"
 // console.log("character at 5th index", newString.charAt(5)) // T
 // console.log("character code at 5th index",newString.charCodeAt(5)) // 84
 
@@ -42,7 +42,7 @@
 // const replacedAllString = newString.replaceAll("c", "d")
 // console.log("replaced all string", replacedAllString)
 
-// const repeatedString = newString.repeat(2)
+// const repeatedString = newString.repeat(3)
 // console.log("repeated string", repeatedString)
 
 // const padStart = newString.padStart(20, "*")
@@ -65,8 +65,8 @@
 const s = 'we are developers'
 // console.log(s.length) // 17
 
-// console.log(s.slice())
-console.log(s.substring())
+console.log(s.slice())                                                                                      
+// console.log(s.substring())
 
 // console.log(s.slice(10)) // elopers
 // console.log(s.substring(10)) // elopers
@@ -83,7 +83,7 @@ console.log(s.substring())
 // console.log(s.slice(13, 10)) // st > en // "" (empty string)
 // console.log(s.substring(13, 10)) // st > en // swap => substring(10, 13) // elo
 
-// console.log(s.slice(-8, -2)) // velope
+console.log(s.slice(-8, -2)) // velope
 // console.log(s.substring(-8, -2)) // substring(0, 0) // ""
 
 console.log(s.slice(13, -6)) // ""
