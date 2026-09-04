@@ -1,5 +1,5 @@
 // export default function Product(props){
-export default function Product({name,price,...others}){
+export default function Product({name,price, ...others}){
     // console.log(".....",others)
     // const name=props.name
     // const price=props.price
@@ -8,7 +8,7 @@ export default function Product({name,price,...others}){
         <>
         <h3> Name:-{name}</h3>
         <p>₹{price}</p>
-        {/* <p>{production}</p> */}
+        {/* <p>{others.production}</p> */}
         {/* <p>{others.description}</p> */}
         {/* <p>Brand: {others.brand}</p> */}
         <p>{others.description?`description:- ${others.description}`: ''}</p>
@@ -18,3 +18,4 @@ export default function Product({name,price,...others}){
     )
 
 }
+// export default Product

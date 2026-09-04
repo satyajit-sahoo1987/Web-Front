@@ -1,5 +1,5 @@
 
-function MyComponent() {
+export default function MyComponent() {
   return (
     <div>
       <h1> 
@@ -11,4 +11,4 @@ function MyComponent() {
     </div>
   )
 }
-export default MyComponent;
+// export default MyComponent;

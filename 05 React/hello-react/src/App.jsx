@@ -3,6 +3,7 @@ import React,{ Fragment } from 'react'
 import './App.css'
 import MyComponent from './MyComponent.jsx'
 import Product from "./Product.jsx"
+import products from "./products"
 
 function App() {
   const a =10
@@ -33,9 +34,13 @@ function App() {
     <MyComponent/>
     {/* <MyComponent></MyComponent> */}
 
-    <Product name="Watch" price="2500" description="This is a stylish watch" brand="rolex"/>
-    <Product name="Mobile" price="50000" brand="oppo"/>
-    <Product name="Books" price="1000" brand="Bharat Collection" production="21 nov 2026"/>
+     {/* <Product name="Watch" price="2500" description="This is a stylish watch" brand="rolex"/> */}
+    {/* <Product name="Mobile" price="50000" brand="oppo"/> */}
+    {/* <Product name="Books" price="1000" brand="Bharat Collection" production="21 nov 2026"/>  */}
+
+    {products.map(product => (
+     <Product name={product.name} price={product.price} description={product.description} brand={product.brand}/>
+    ))};
     </>
     /* </Fragment> */
   // </React.Fragment>
