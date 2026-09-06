@@ -1,16 +1,16 @@
-// // let fruits = ["Apple", "Banana", "Mango"];
+// let fruits = ["Apple", "Banana", "Mango"];
 
 // // // for loop ------------------------------
 // // console.log("By using for loop -------------")
-// // for(let i = 0; i < fruits.length; i++) {
-// //   console.log(fruits[i])
-// // }
+// for(let i = 0; i < fruits.length; i++) {
+//   console.log(fruits[i])
+// }
 
 // // // for of loop --------------------------
-// // console.log("By using for of loop -------------")
-// // for(const fruit of fruits){
-// //   console.log(fruit)
-// // }
+// console.log("By using for of loop -------------")
+// for(const fruit of fruits){
+//   console.log(fruit)
+// }
 
 
 // // for in loop --------------------------
@@ -23,8 +23,8 @@
     // }
 
 // for(const key in student) {
-//   console.log(key, typeof key)
-// //   console.log(student[key])
+  // console.log(key, typeof key)
+  // console.log(student[key])
 // }
 
 // // Object.keys() ----------------
@@ -58,15 +58,15 @@ const student = {
 // console.log(Object.entries(student))
 // const entries = Object.entries(student)
 // for(const entry of entries) {
-//   console.log("////", entry) // array
+  // console.log("////", entry) // array
 //   console.log("outer loop")
-//   for(let i = 0; i < entry.length; i++) {
-//     console.log("value is", entry[i], "at idx", i)
-//   }
-// }
+  // for(let i = 0; i < entry.length; i++) {
+  //   console.log("value is", entry[i], "at idx", i)
+  // }
+// } 
 
 
-const entries = Object.entries(student)
+// const entries = Object.entries(student)
 // for(const entry of entries) {
 //   const [key, value] = entry
 //   console.log(key, '->', value) 

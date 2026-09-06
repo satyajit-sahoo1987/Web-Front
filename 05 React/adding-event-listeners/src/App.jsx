@@ -31,3 +31,6 @@ function App() {
 
 
 export default App
+//simple JS function but having some speciaal feature
+//hooks can only be used inside functional components
+// hooks always start with 'use' prefix(useSate,useEffect,useReducer,useContext,useRef,useMemo)
