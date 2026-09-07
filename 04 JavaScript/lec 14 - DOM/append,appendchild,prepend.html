@@ -36,19 +36,20 @@
     // container.appendChild(h1)
     // container.appendChild("Hiii")  // error - as appendChild can only add element, but here we're trying to append text
 
-    const h1Clone2 = h1.cloneNode(true)
-    h1Clone2.textContent = 'Hello World'
-    container.appendChild(h1Clone2,h1) // appendChild only adds the first element as a last child
+    // const h1Clone2 = h1.cloneNode(true)
+    // h1Clone2.textContent = 'Hello World'
+    // container.appendChild(h1Clone2,h1) // appendChild only adds the first element as a last child
 
     // Diff betn append & appendChild
-    // 1. append can add multiple arguments as child whereas appendChild only add first element as a child although we have passed multiple arguments in the parameters
+    // 1. append can add multiple arguments as child whereas appendChild only add first 
+    // element as a child although we have passed multiple arguments in the parameters
     // 2. append can add text whereas appendChild cannot add text
 
     
     // container.prepend(h1)
-    // const h1Clone2 = h1.cloneNode(true)
-    // h1Clone2.textContent = 'Hello World'
-    // container.prepend(h1, h1Clone2) 
+    const h1Clone2 = h1.cloneNode(true)
+    h1Clone2.textContent = 'Hello World'
+    container.prepend(h1, h1Clone2) 
   </script>
 </body>
 
