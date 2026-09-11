@@ -1,60 +1,61 @@
+import { useEffect, useState } from "react";
 import countriesData from "../countriesData";
 import CountryCard from "./CountryCard";
-import {useEffect, useState} from 'react';
-export default function CountriesList({query ,selectRegion}) {
-  const[countriesData,setCountriesData]=useState([])
-  // const[query,setQuery]=useState("")
-  const filteredCountries=countriesData.filter(country=>country.names.common.toLowerCase() .includes(query.toLowerCase())
-&& (selectRegion===""||country.region.toLowerCase()===selectRegion.toLowerCase())
-);
-  
-useEffect(()=>{
-  fetch(
-  'https://api.restcountries.com/countries/v5?response_fields=names.common,capitals,flag.url_svg,region,population&limit=100',
-  {
-     headers: { 'Authorization': 'Bearer rc_live_3723a4758d154e1882ff8b3e79ec1ea2'
 
-      } }
-)
-.then((response)=>response.json())
-.then((result)=>{
-console.log("result is",result)
-  setCountriesData(result.data.objects)
-})
-},[])
-console.log("//////",countriesData)
-  // const handleChange=(e)=>{
-    // console.log(e.target.value)
-      // setQuery(e.target.value)
-    // }
-  
-    
-  return (
-   <>
-   {/* <input type="text" name="search" onChange={handleChange}/> */}
-    <div className="countries-container">
+export default function CountriesList({ query }) {
+  const [countriesData, setCountriesData] = useState([])
 
-      {
-        // countriesData.map((country,idx)=>(
-          filteredCountries.length!=0?
-        (filteredCountries.map((country,idx)=>(
-
-          <CountryCard
-          key={idx} 
-          flag={country.flag.url_svg || "www.go0gle.com"}
-          name={country.names.common}
-          population={country.population}
-          capital={country.capital}
-          region={country.region}
-          />)
-        ))
-        :
-      <p>Unable to find Country with name:-{query}</p>
+  const filteredCountries = countriesData.filter(country =>
+    country.names.common.toLowerCase().includes(query.toLowerCase()))
+  useEffect(()=>{
+  fetch('https://api.restcountries.com/countries/v5?response_fields=names.common,capitals,flag.url_svg,region,population&limit=100',
+    {
+      headers: {
+        'Authorization': 'Bearer rc_live_d48b508f8bd04db9a9a9b751ac01253e'
       }
+    }
+  )
+    .then((response) => response.json())
+    .then((result) => {
+      console.log("result is", result)
+      setCountriesData(result.data.objects)
+    })
+  },[])
+ /*
+  useEffect=>
+    -to perform something on the first render(mount) of the component
+  - to perform something when the state is changed
+  -to perform something when the component is unmount(removed) from the web page
 
-    
+  Syntax=>
+    useEffect(callback fun,dependency array)
+  dependency array:-
+  is not availble->useEffect will be called on every render & re-render
+   is empty[]->useEffect is only called once 
+   is[state]->useEffect will only called on render & on the state change
+ */
+  console.log("countriesList Component",countriesData)
 
-    </div>
-   </>
+  return (
+    <>
+ 
+      <div className="countries-container">
+           {/* <button onClick={()=>setCountriesData([])}>Click Here</button> */}
+        {
+          filteredCountries.length != 0 ?
+            (filteredCountries.map((country, idx) => (
+              <CountryCard
+                key={idx}
+                flag={country.flag.url_svg || "www.google.com"}
+                name={country.names.common}
+                population={country.population}
+                capital={country.capitals}
+                region={country.region}
+              />)))
+            :
+            <p>Unable to find Country with name:- {query}</p>
+        }
+      </div>
+    </>
   )
 }
