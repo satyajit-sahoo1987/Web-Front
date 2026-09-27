@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link, useNavigate, useParams } from "react-router"
 import "./CountryDetails.css"
-
+import CountryDetailShimmer from "./CountryDetailShimmer";
 export default function CountryDetail() {
   const [countryData, setCountryData] = useState(null)
   const[countryNotFound,setCountryNotFound]=useState(false)
@@ -42,7 +42,7 @@ export default function CountryDetail() {
   return (
     <main>
       {
-        !countryData ? <p>Loading...</p> : (
+        !countryData ? (<CountryDetailShimmer/>) : (
           <div className="country-details-container">
             <div className="navigation-container">
             <span className="back-button" onClick={() => navigate(-1)}>
