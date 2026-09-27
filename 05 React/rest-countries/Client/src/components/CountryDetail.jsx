@@ -10,7 +10,7 @@ export default function CountryDetail() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    fetch(" =" + country)
+    fetch("http://localhost:3000/countries?names.common="+ country)
       .then(resp => resp.json())
       .then(res => {
         // console.log(res)
@@ -44,9 +44,14 @@ export default function CountryDetail() {
       {
         !countryData ? <p>Loading...</p> : (
           <div className="country-details-container">
-            <span className="back-button" onClick={() => navigate("/")}>
+            <div className="navigation-container">
+            <span className="back-button" onClick={() => navigate(-1)}>
               <i className="fa-solid fa-arrow-left"></i>&nbsp; Back
             </span>
+            <span className="back-button" onClick={() => navigate(2)}>
+             Forward <i className="fa-solid fa-arrow-right"></i>&nbsp;
+            </span>
+            </div>
             <div className="country-details">
               <img src={countryData.flag.url_svg} alt="#" />
               <div className="details-text-container">

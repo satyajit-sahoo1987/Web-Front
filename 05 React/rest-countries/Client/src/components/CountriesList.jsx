@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import countriesData from "../countriesData";
 import CountryCard from "./CountryCard";
+import CountruiesListShimmer from "./CountruiesListShimmer";
 
 export default function CountriesList({ query }) {
   const [countriesData, setCountriesData] = useState([])
@@ -44,6 +45,8 @@ export default function CountriesList({ query }) {
     <>
       <div className="countries-container">
         {
+          !countriesData.length?
+          <CountruiesListShimmer/>:
           filteredCountries.length != 0 ?
             (filteredCountries.map((country, idx) => (
               <CountryCard
@@ -55,7 +58,7 @@ export default function CountriesList({ query }) {
                 region={country.region}
               />)))
             :
-            <p>Unable to find Country with name:- {query}</p>
+            <h2>Unable to find Country with name:- {query}</h2>
         }
       </div>
     </>

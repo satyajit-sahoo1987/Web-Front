@@ -3,6 +3,10 @@
     margin-inline: auto;
     margin-top: 32px;
 }
+.navigation-container{
+    display: flex;
+    justify-content: space-between;
+}
 
 .back-button {
     padding: 6px 24px;

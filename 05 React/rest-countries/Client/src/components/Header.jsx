@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router"
 
 export default function Header() {
 
@@ -18,7 +19,7 @@ document.body.classList.add('dark')
     <header className="header-container">
       <div className="header-content">
         <h2 className="title">
-          <a href="/">Where in the world?</a>
+          <Link to="/">Where in the world?</Link>
         </h2>
         <p className="theme-changer" onClick={handleClick}>
           <i className={isDark?'fa-regular fa-sun':'fa-solid fa-moon'}/>
