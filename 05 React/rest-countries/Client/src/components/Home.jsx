@@ -1,13 +1,15 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import SearchBar from './SearchBar'
 import SelectMenu from './SelectMenu'
 import CountriesList from './CountriesList'
+import { ThemeContext } from '../context/ThemeContext'
 
 const Home = () => {
+  const{isDark}=useContext(ThemeContext)
   const[query,setQuery]=useState("")
   return (
     <>
-    <main>
+  <main className={`${isDark ? 'dark':''}`}>
         <div className="search-filter-container">
             <SearchBar setQuery={setQuery}/>
             <SelectMenu/>

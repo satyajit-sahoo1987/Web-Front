@@ -5,9 +5,9 @@
 // import { personName } from "./export.js"
 
 // // Default Import
-// import personName from "./export.js"
+import personName from "./export.js"
 
-// console.log(personName)
+console.log(personName)
 
 // ===============================
 // 1. Named Import

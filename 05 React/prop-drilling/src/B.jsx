@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import C from './C'
+// import { MessageContext } from './context/MessageContext'
 
-const B = ({message}) => {
+const B = () => {
+  // const context=useContext(MessageContext)
+  // console.log("////",context)
   return (
     <div style={{
               border:"2px solid green",
               padding:'20px'
             }}>
               B Component
-            <C message={message}/>
+            <C />
             </div>
   )
 }

@@ -18,6 +18,15 @@ body.dark {
     --text-color: white;
     --elements-color: hsl(209, 23%, 22%);
 }
+main.dark,header.dark{
+--background-color: hsl(207, 26%, 17%); 
+    --text-color: white;
+    --elements-color: hsl(209, 23%, 22%);
+
+    background-color: hsl(207, 26%, 17%);
+    color: white;
+
+}
 
 main {
     padding: 24px;

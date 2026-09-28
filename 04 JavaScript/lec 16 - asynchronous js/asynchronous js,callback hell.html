@@ -68,31 +68,31 @@
       }
     }
 
-    // function success() {
-    //   console.log("Email send successfully")
-    // } 
-    // function failure() {
-    //   console.log("Unable to send Email !!!")
-    // }
-    // sendEmail(success, failure)
+    function success() {
+      console.log("Email send successfully")
+    } 
+    function failure() {
+      console.log("Unable to send Email !!!")
+    }
+    sendEmail(success, failure)
 
-    sendEmail(function () {
-      console.log("Email-1 send successfully")
+    // sendEmail(function () {
+    //   console.log("Email-1 send successfully")
 
-      sendEmail(() => {
-        console.log("Email-2 send successfully")
+    //   sendEmail(() => {
+    //     console.log("Email-2 send successfully")
 
-        sendEmail(() => {
-          console.log("Email-3 send successfully")
-        }, () => {
-          console.log("Unable to send Email-3 !!!")
-        })
-      }, () => {
-        console.log("Unable to send Email-2 !!!")
-      })
-    }, () => {
-      console.log("Unable to send Email-1 !!!")
-    })
+    //     sendEmail(() => {
+    //       console.log("Email-3 send successfully")
+    //     }, () => {
+    //       console.log("Unable to send Email-3 !!!")
+    //     })
+    //   }, () => {
+    //     console.log("Unable to send Email-2 !!!")
+    //   })
+    // }, () => {
+    //   console.log("Unable to send Email-1 !!!")
+    // })
   </script>
 </body>
 <!-- Promises -->

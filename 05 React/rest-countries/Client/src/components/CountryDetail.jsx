@@ -48,7 +48,7 @@ export default function CountryDetail() {
             <span className="back-button" onClick={() => navigate(-1)}>
               <i className="fa-solid fa-arrow-left"></i>&nbsp; Back
             </span>
-            <span className="back-button" onClick={() => navigate(2)}>
+            <span className="back-button" onClick={() => navigate(+1)}>
              Forward <i className="fa-solid fa-arrow-right"></i>&nbsp;
             </span>
             </div>
