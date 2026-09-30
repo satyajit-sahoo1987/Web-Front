@@ -2,12 +2,14 @@ import { useEffect, useState } from "react";
 import countriesData from "../countriesData";
 import CountryCard from "./CountryCard";
 import CountruiesListShimmer from "./CountruiesListShimmer";
+import useWindowSize from "../hooks/useWindowSize";
 
 export default function CountriesList({ query }) {
   const [countriesData, setCountriesData] = useState([])
 
   const filteredCountries = countriesData.filter(country =>
-    country.names.common.toLowerCase().includes(query.toLowerCase()))
+    country.names.common.toLowerCase().includes(query.toLowerCase()) ||country.region.toLowerCase()
+  .includes(query.toLowerCase()))
     
     useEffect(() => {
     
@@ -23,6 +25,7 @@ export default function CountriesList({ query }) {
           setCountriesData(result)
         })
     }, [])
+const windowSize = useWindowSize();
 
   /*
     useEffect =>
@@ -43,6 +46,7 @@ export default function CountriesList({ query }) {
 
   return (
     <>
+    <h1 style={{ textAlign: "center" }}>{innerWidth}X{innerHeight}</h1>
       <div className="countries-container">
         {
           !countriesData.length?

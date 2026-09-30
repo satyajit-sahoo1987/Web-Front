@@ -1,12 +1,16 @@
-import { useEffect, useState } from "react"
+import { useCallback, useContext, useEffect, useState } from "react"
 import { Link, useNavigate, useParams } from "react-router"
 import "./CountryDetails.css"
 import CountryDetailShimmer from "./CountryDetailShimmer";
+import { ThemeContext } from "../context/ThemeContext";
+import useWindowSize from "../hooks/useWindowSize"
 export default function CountryDetail() {
+  const { isDark } = useContext(ThemeContext)
+  const windowSize = useWindowSize()
   const [countryData, setCountryData] = useState(null)
   const[countryNotFound,setCountryNotFound]=useState(false)
   const { country } = useParams()
-  console.log(".......",country)
+  // console.log(".......",country)
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -40,7 +44,8 @@ export default function CountryDetail() {
   }
 
   return (
-    <main>
+    <main className={`${isDark && 'dark'}`}> 
+     <h1 style={{ textAlign: 'center' }}>{windowSize.width} X {windowSize.height}</h1>
       {
         !countryData ? (<CountryDetailShimmer/>) : (
           <div className="country-details-container">

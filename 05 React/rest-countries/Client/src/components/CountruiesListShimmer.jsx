@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CountruiesListShimmer = () => {
+const CountriesListShimmer = () => {
   return (
     <> 
     {
@@ -21,4 +21,4 @@ const CountruiesListShimmer = () => {
   )
 }
 
-export default CountruiesListShimmer
+export default CountriesListShimmer
